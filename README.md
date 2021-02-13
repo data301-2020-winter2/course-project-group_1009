@@ -18,9 +18,9 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 ## Team Members
 
 - Alessandro Pisa: I am a UBCO student majoring in Computer Science. I am looking forward to working in this project.
-- Person 2: one sentence about you!
+- Abijith Ashok: I am a second year student majoring in computer Science and I love to meet new people and learn new things.
 - Person 3: one sentence about you!
 
 ## References
 
-{Add your stuff here}
+Our Data Set: https://www.kaggle.com/uciml/mushroom-classification/metadata
