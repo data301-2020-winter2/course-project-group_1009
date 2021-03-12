@@ -1,2 +1,2 @@
-Raw data for the project can be found here. 
-Original link to the dataset: https://www.kaggle.com/uciml/mushroom-classification 
+## Raw Data README.md ##
+- *The raw data used in the project can be found in this directory, or alternativley [here](https://www.kaggle.com/uciml/mushroom-classification).* 
