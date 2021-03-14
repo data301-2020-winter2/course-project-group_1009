@@ -110,8 +110,8 @@ def show_edibility_ratio(df:
     ratioDict = {}
 
     length = len(df.columns[1:])
-    axes = [None]*length
-    h = plt.figure(figsize=(10*3,10*int(length/3+1)))
+    #axes = [None]*length
+    #h = plt.figure(figsize=(10*3,10*int(length/3+1)))
     for i in range(1, length):
         col = df.columns[i]
         rqData = pd.DataFrame(df[col].value_counts())
@@ -119,10 +119,10 @@ def show_edibility_ratio(df:
 
         rqData = rqData.merge(pd.DataFrame(df[col].loc[df['Edible'] != True].value_counts()).reset_index().rename(columns = {col:'Not Edible'}), how='outer')
         rqData = rqData.merge(pd.DataFrame(df[col].loc[df['Edible']].value_counts()).reset_index().rename(columns = {col:'Edible'}), how='outer')
-        rqData['Edibility'] = rqData['Edible'] / rqData['Not Edible']
+        rqData['Edibility'] = rqData['Edible'].fillna(0) / (rqData['Not Edible'].fillna(0) + rqData['Edible'].fillna(0))
         #print(rqData)
         ratioDict.update({col:rqData})
-        axes[i] = h.add_subplot(int(length/3+1),3,i)
-        sns.barplot(data=rqData, x='index', y='Edibility')
+        #axes[i] = h.add_subplot(int(length/3+1),3,i)
+        #sns.barplot(data=rqData, x='index', y='Edibility')
     return ratioDict
 
