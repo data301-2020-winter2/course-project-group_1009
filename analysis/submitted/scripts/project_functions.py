@@ -29,20 +29,27 @@ def load_and_process_data(directory):
             'Spore Print Color': {'k':'black','n':'brown','b':'buff','h':'chocolate','r':'green','o':'orange','u':'purlple','w':'white','y':'yellow'},
             'Population': {'a':'abundant','c':'clustered','n':'numerous','s':'scattered','v':'several','y':'solitary'},
             'Habitat': {'g':'grasses','l':'leaves','m':'meadows','p':'paths','u':'urban','w':'waste','d':'woods'}})
-        .sort_values(by='Class').reset_index().drop('index',axis=1))
+        .assign(Edible=df['class']).replace({'Edible':{'e':True, 'p':False}}).sort_values(by='Class').reset_index().drop('index',axis=1))
     return df
 
 
-def show_cap_related_features(df):
+def show_cap_related_features(df, ratioDict):
     sns.set_palette('Set1')
 
-    fig = plt.figure(figsize=(20,6))
-    ax1 = fig.add_subplot(131)
-    ax2 = fig.add_subplot(132)
-    ax3 = fig.add_subplot(133)
-    sns.countplot(data=df, x='Cap Shape', hue="Class", ax=ax1)
-    sns.countplot(data=df, x='Cap Surface', hue="Class", ax=ax2)
-    sns.countplot(data=df, x='Cap Color', hue="Class", ax=ax3)
+    fig = plt.figure(figsize=(20,12))
+    ax1 = fig.add_subplot(231)
+    ax2 = fig.add_subplot(232)
+    ax3 = fig.add_subplot(233)
+    ax4 = fig.add_subplot(234)
+    ax5 = fig.add_subplot(235)
+    ax6 = fig.add_subplot(236)
+    sns.countplot(data=df, x='Cap Shape', hue="Class", ax=ax1, order=ratioDict['Cap Shape']['index'])
+    sns.countplot(data=df, x='Cap Surface', hue="Class", ax=ax2, order=ratioDict['Cap Surface']['index'])
+    sns.countplot(data=df, x='Cap Color', hue="Class", ax=ax3, order=ratioDict['Cap Color']['index'])
+    sns.barplot(data=ratioDict['Cap Shape'], x='index', y='Edibility', ax = ax4, order=ratioDict['Cap Shape']['index'])
+    sns.barplot(data=ratioDict['Cap Surface'], x='index', y='Edibility', ax = ax5, order=ratioDict['Cap Surface']['index'])
+    sns.set_palette('Set1')
+    sns.barplot(data=ratioDict['Cap Color'], x='index', y='Edibility', ax = ax6, order=ratioDict['Cap Color']['index'])
 
 
 def show_gill_related_features(df):
@@ -106,7 +113,7 @@ def show_miscellaneous_features(df):
     sns.countplot(data=df, x='Bruises', hue="Class", ax=ax2)
     sns.countplot(data=df, x='Odor', hue="Class", ax=ax3)
 
-def show_edibility_ratio(df:
+def show_edibility_ratio(df):
     ratioDict = {}
 
     length = len(df.columns[1:])
@@ -118,7 +125,7 @@ def show_edibility_ratio(df:
         rqData.reset_index(inplace = True)
 
         rqData = rqData.merge(pd.DataFrame(df[col].loc[df['Edible'] != True].value_counts()).reset_index().rename(columns = {col:'Not Edible'}), how='outer')
-        rqData = rqData.merge(pd.DataFrame(df[col].loc[df['Edible']].value_counts()).reset_index().rename(columns = {col:'Edible'}), how='outer').drop('index',axis=1)
+        rqData = rqData.merge(pd.DataFrame(df[col].loc[df['Edible']].value_counts()).reset_index().rename(columns = {col:'Edible'}), how='outer')
         rqData['Edibility'] = rqData['Edible'].fillna(0) / (rqData['Not Edible'].fillna(0) + rqData['Edible'].fillna(0))
         #print(rqData)
         ratioDict.update({col:rqData})
