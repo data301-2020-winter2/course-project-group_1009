@@ -1,6 +1,7 @@
 import pandas as pd
 import seaborn as sns
 import numpy as np
+import re as regex
 import matplotlib.pyplot as plt
 
 def load_and_process_data(directory):
