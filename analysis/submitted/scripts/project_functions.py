@@ -163,6 +163,7 @@ def show_edibility_ratio(df):
         #sns.barplot(data=rqData, x='index', y='Edibility')
     return ratioDict
 
+
 def sort_by_influence(ratioDict, keepCoeff=False):
     ratios = pd.DataFrame(columns=['Feature','Edibility'])
     for ratio in ratioDict.values():
@@ -176,3 +177,10 @@ def sort_by_influence(ratioDict, keepCoeff=False):
     if not keepCoeff:
         ratios.drop(['coeff'],axis=1,inplace=True)
     return ratios
+
+
+def show_top_features(ratioDict):
+    e = sort_by_influence(ratioDict)
+    e.sort_values(by='Edibility', inplace=True)
+    top_features = pd.DataFrame({'Top Poisonous Mushroom Traits': e.head(10).reset_index()['Feature'],'Top Edible Mushroom Traits': e.tail(10).reset_index()['Feature']})
+    return top_features
