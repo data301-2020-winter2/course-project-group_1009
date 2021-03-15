@@ -150,7 +150,7 @@ def show_miscellaneous_features(df, ratioDict):
 
 def show_features(df, ratioDict, col):
     sns.set_palette("Paired")
-    fig = plt.figure(figsize=(20,15))
+    fig = plt.figure(figsize=(10*len(col),15))
     length = len(col)
     axes = [None]*length*2
     for i in range(0,length):
