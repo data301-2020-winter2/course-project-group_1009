@@ -172,7 +172,7 @@ def sort_by_influence(ratioDict, keepCoeff=False):
             #print(nr)
             ratios = ratios.append(nr, ignore_index=True)
     ratios['coeff'] = abs(ratios['Edibility']-0.5)+0.5
-    ratios.sort_values(by=['coeff'],ascending=False,inplace=True)
+    ratios.sort_values(by=['coeff'],ascending=False).reset_index(drop=True,inplace=True)
     if not keepCoeff:
         ratios.drop(['coeff'],axis=1,inplace=True)
     return ratios
