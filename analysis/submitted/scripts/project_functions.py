@@ -1,6 +1,7 @@
 import pandas as pd
 import seaborn as sns
 import numpy as np
+import re as regex
 import matplotlib.pyplot as plt
 
 def load_and_process_data(directory):
@@ -137,8 +138,9 @@ def show_features(df, ratioDict, col):
         axes[i+length] = fig.add_subplot(2,length,i+length+1)
         sns.set_palette("Set1")
         sns.countplot(data=df, x=col[i], hue="Class", ax=axes[i], order=ratioDict[col[i]]['index'])
-        sns.set_palette("viridis", as_cmap=True)
+        sns.set_palette("pastel")
         sns.barplot(data=ratioDict[col[i]], x='index', y='Edibility', ax = axes[i+length], order=ratioDict[col[i]]['index']).set(xlabel=col[i])
+        axes[i+length].set_ylim([0, 1])
 
 
 def show_edibility_ratio(df):
@@ -166,7 +168,7 @@ def sort_by_influence(ratioDict, keepCoeff=False):
     for ratio in ratioDict.values():
         for index, row in ratio.iterrows():
             #nr={'Feature':'{} {}'.format(row['index'],ratio.columns[1]),'Edibility':row['Edibility']}
-            nr={'Feature':regex.sub(r'([a-z])([a-z]*)',lambda match: '{}{}'.format(match.group(1).upper(),match.group(2)),str(row['index'])),'Edibility':row['Edibility']}
+            nr={'Feature':'{} {}'.format(regex.sub(r'([a-z])([a-z]*)',lambda match: '{}{}'.format(match.group(1).upper(),match.group(2)),str(row['index'])),ratio.columns[1]),'Edibility':row['Edibility']}
             #print(nr)
             ratios = ratios.append(nr, ignore_index=True)
     ratios['coeff'] = abs(ratios['Edibility']-0.5)+0.5

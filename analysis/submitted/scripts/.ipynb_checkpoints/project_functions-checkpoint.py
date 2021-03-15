@@ -137,8 +137,9 @@ def show_features(df, ratioDict, col):
         axes[i+length] = fig.add_subplot(2,length,i+length+1)
         sns.set_palette("Set1")
         sns.countplot(data=df, x=col[i], hue="Class", ax=axes[i], order=ratioDict[col[i]]['index'])
-        sns.set_palette("viridis", as_cmap=True)
+        sns.set_palette("pastel")
         sns.barplot(data=ratioDict[col[i]], x='index', y='Edibility', ax = axes[i+length], order=ratioDict[col[i]]['index']).set(xlabel=col[i])
+        axes[i+length].set_ylim([0, 1])
 
 
 def show_edibility_ratio(df):
