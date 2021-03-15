@@ -168,7 +168,7 @@ def sort_by_influence(ratioDict, keepCoeff=False):
     for ratio in ratioDict.values():
         for index, row in ratio.iterrows():
             #nr={'Feature':'{} {}'.format(row['index'],ratio.columns[1]),'Edibility':row['Edibility']}
-            nr={'Feature':regex.sub(r'([a-z])([a-z]*)',lambda match: '{}{}'.format(match.group(1).upper(),match.group(2)),str(row['index'])),'Edibility':row['Edibility']}
+            nr={'Feature':'{}{}'.format(regex.sub(r'([a-z])([a-z]*)',lambda match: '{} {}'.format(match.group(1).upper(),match.group(2)),str(row['index'])),ratio.columns[1]),'Edibility':row['Edibility']}
             #print(nr)
             ratios = ratios.append(nr, ignore_index=True)
     ratios['coeff'] = abs(ratios['Edibility']-0.5)+0.5
