@@ -43,7 +43,12 @@ def show_cap_related_features(df):
     sns.countplot(data=df, x='Cap Shape', hue="Class", ax=ax1)
     sns.countplot(data=df, x='Cap Surface', hue="Class", ax=ax2)
     sns.countplot(data=df, x='Cap Color', hue="Class", ax=ax3)
-
+    
+def vennD(colname, colval, colname1, colval1, edibility, data ):
+    df1=data[(data[colname]==colval)  & (data['Class']==edibility)]
+    df2=data[(data[colname]==colval) & (data[colname1]==colval1) & (data['Class']==edibility)]
+    df3=data[(data[colname1]==colval1) & (data['Class']==edibility)]
+    return venn2(subsets = (len(df1)-len(df2), len(df3)-len(df2), len(df2)), set_labels = (colval+" "+colname, colval1+" "+colname1) )
 
 def show_gill_related_features(df):
     fig = plt.figure(figsize=(20,15))

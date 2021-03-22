@@ -3,6 +3,7 @@ import seaborn as sns
 import numpy as np
 import re as regex
 import matplotlib.pyplot as plt
+from matplotlib_venn import venn2
 
 def load_and_process_data(directory):
     df = pd.read_csv(directory) # I can't chain this one because I access df right here
@@ -38,7 +39,12 @@ def show_cap_related_features(df, ratioDict):
     col = ['Cap Shape','Cap Surface','Cap Color']
     show_features(df,ratioDict,col)
 
-    
+def vennD(colname, colval, colname1, colval1, edibility, data ):
+    df1=data[(data[colname]==colval)  & (data['Class']==edibility)]
+    df2=data[(data[colname]==colval) & (data[colname1]==colval1) & (data['Class']==edibility)]
+    df3=data[(data[colname1]==colval1) & (data['Class']==edibility)]
+    return venn2(subsets = (len(df1)-len(df2), len(df3)-len(df2), len(df2)), set_labels = (colval+" "+colname, colval1+" "+colname1) )
+
 def show_gill_related_features(df, ratioDict):
 #    fig = plt.figure(figsize=(20,15))
 #    ax1 = fig.add_subplot(221)
