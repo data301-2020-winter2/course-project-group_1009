@@ -1,0 +1,117 @@
+,Feature,Edibility
+0,Yellow Stalk Color Above Ring,0.0
+1,Spicy Odor,0.0
+2,Buff Stalk Color Below Ring,0.0
+3,Fishy Odor,0.0
+4,Pungent Odor,0.0
+5,Creosote Odor,0.0
+6,Musty Odor,0.0
+7,Green Spore Print Color,0.0
+8,Cinnamon Stalk Color Above Ring,0.0
+9,Foul Odor,0.0
+10,Cinnamon Stalk Color Below Ring,0.0
+11,Grooves Cap Surface,0.0
+12,Buff Gill Color,0.0
+13,Yellow Stalk Color Below Ring,0.0
+14,None Ring Type,0.0
+15,Conical Cap Shape,0.0
+16,Large Ring Type,0.0
+17,0.0 Ring Number,0.0
+18,Yellow Veil Color,0.0
+19,Green Gill Color,0.0
+20,Buff Stalk Color Above Ring,0.0
+21,Chocolate Spore Print Color,0.029411764705882353
+22,Brown Stalk Color Above Ring,0.03571428571428571
+23,Silky Stalk Surface Above Ring,0.06070826306913996
+24,Silky Stalk Surface Below Ring,0.0625
+25,Narrow Gill Size,0.11464968152866242
+26,Paths Habitat,0.11888111888111888
+27,Brown Stalk Color Below Ring,0.125
+28,White Spore Print Color,0.24120603015075376
+29,Urban Habitat,0.2608695652173913
+30,Knobbed Cap Shape,0.2753623188405797
+31,Chocolate Gill Color,0.2786885245901639
+32,Buff Cap Color,0.2857142857142857
+33,Leaves Habitat,0.28846153846153844
+34,Several Population,0.29504950495049503
+35,FAlse Bruises,0.3066554338668913
+36,Pink Stalk Color Below Ring,0.3076923076923077
+37,Pink Stalk Color Above Ring,0.3076923076923077
+38,Gray Gill Color,0.32978723404255317
+39,Evanescent Ring Type,0.3631123919308357
+40,Yellow Cap Color,0.373134328358209
+41,Pink Cap Color,0.3888888888888889
+42,Red Cap Color,0.416
+43,Close Gill Spacing,0.4415736934820904
+44,Smooth Cap Surface,0.4475743348982786
+45,Enlarging Stalk Shape,0.459613196814562
+46,Scaly Cap Surface,0.4636251541307028
+47,1.0 Ring Number,0.49145299145299143
+48,Flat Cap Shape,0.5063451776649747
+49,White Veil Color,0.5068147400302877
+50,Free Gill Attachment,0.5074551427849381
+51,Bulbous Stalk Root,0.5084745762711864
+52,Partial Veil Type,0.517971442639094
+53,Convex Cap Shape,0.5328227571115973
+54,Brown Cap Color,0.553415061295972
+55,Gray Cap Color,0.5608695652173913
+56,Tapering Stalk Shape,0.5625
+57,Pink Gill Color,0.5710455764075067
+58,Woods Habitat,0.5972045743329097
+59,White Stalk Color Above Ring,0.6164874551971327
+60,White Stalk Color Below Ring,0.6167883211678832
+61,Solitary Population,0.6214953271028038
+62,Grasses Habitat,0.6554934823091247
+63,Scaly Stalk Surface Above Ring,0.6666666666666666
+64,Fibrous Cap Surface,0.6724137931034483
+65,Smooth Stalk Surface Below Ring,0.6888168557536467
+66,White Cap Color,0.6923076923076923
+67,Broad Gill Size,0.6985032074126871
+68,Smooth Stalk Surface Above Ring,0.7032457496136012
+69,Scattered Population,0.7051282051282052
+70,Cinnamon Cap Color,0.7272727272727273
+71,Scaly Stalk Surface Below Ring,0.7323943661971831
+72,Fibrous Stalk Surface Above Ring,0.7391304347826086
+73,Yellow Gill Color,0.7441860465116279
+74,Fibrous Stalk Surface Below Ring,0.76
+75,Equal Stalk Root,0.7714285714285715
+76,Pendant Ring Type,0.7943548387096774
+77,White Gill Color,0.7953410981697171
+78,TRue Bruises,0.8151658767772512
+79,Black Gill Color,0.8431372549019608
+80,Clustered Population,0.8470588235294118
+81,Meadows Habitat,0.8767123287671232
+82,2.0 Ring Number,0.88
+83,Black Spore Print Color,0.8803418803418803
+84,Brown Spore Print Color,0.8861788617886179
+85,Brown Gill Color,0.8931297709923665
+86,Bell Cap Shape,0.8938053097345132
+87,Purple Gill Color,0.9024390243902439
+88,Attached Gill Attachment,0.9142857142857143
+89,Crowded Gill Spacing,0.9146341463414634
+90,Club Stalk Root,0.920863309352518
+91,None Odor,0.9659863945578231
+92,Anise Odor,1.0
+93,Purple Cap Color,1.0
+94,Green Cap Color,1.0
+95,Orange Spore Print Color,1.0
+96,Numerous Population,1.0
+97,Abundant Population,1.0
+98,Sunken Cap Shape,1.0
+99,Almond Odor,1.0
+100,Purlple Spore Print Color,1.0
+101,Orange Stalk Color Above Ring,1.0
+102,Buff Spore Print Color,1.0
+103,Red Stalk Color Above Ring,1.0
+104,Flaring Ring Type,1.0
+105,Red Gill Color,1.0
+106,Orange Gill Color,1.0
+107,Brown Veil Color,1.0
+108,Orange Veil Color,1.0
+109,Rooted Stalk Root,1.0
+110,Red Stalk Color Below Ring,1.0
+111,Orange Stalk Color Below Ring,1.0
+112,Gray Stalk Color Above Ring,1.0
+113,Gray Stalk Color Below Ring,1.0
+114,Yellow Spore Print Color,1.0
+115,Waste Habitat,1.0
