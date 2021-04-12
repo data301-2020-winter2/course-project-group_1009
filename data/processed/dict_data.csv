@@ -1,0 +1,138 @@
+Cap Shape,"     index  Cap Shape  Not Edible  Edible  Edibility
+0   convex       3656      1708.0  1948.0   0.532823
+1     flat       3152      1556.0  1596.0   0.506345
+2  knobbed        828       600.0   228.0   0.275362
+3     bell        452        48.0   404.0   0.893805
+4   sunken         32         NaN    32.0   1.000000
+5  conical          4         4.0     NaN   0.000000"
+Cap Surface,"     index  Cap Surface  Not Edible  Edible  Edibility
+0    scaly         3244        1740  1504.0   0.463625
+1   smooth         2556        1412  1144.0   0.447574
+2  fibrous         2320         760  1560.0   0.672414
+3  grooves            4           4     NaN   0.000000"
+Cap Color,"      index  Cap Color  Not Edible  Edible  Edibility
+0     brown       2284      1020.0    1264   0.553415
+1      gray       1840       808.0    1032   0.560870
+2       red       1500       876.0     624   0.416000
+3    yellow       1072       672.0     400   0.373134
+4     white       1040       320.0     720   0.692308
+5      buff        168       120.0      48   0.285714
+6      pink        144        88.0      56   0.388889
+7  cinnamon         44        12.0      32   0.727273
+8     green         16         NaN      16   1.000000
+9    purple         16         NaN      16   1.000000"
+Bruises,"   index  Bruises  Not Edible  Edible  Edibility
+0  False     4748        3292    1456   0.306655
+1   True     3376         624    2752   0.815166"
+Odor,"      index  Odor  Not Edible  Edible  Edibility
+0      none  3528       120.0  3408.0   0.965986
+1      foul  2160      2160.0     NaN   0.000000
+2     spicy   576       576.0     NaN   0.000000
+3     fishy   576       576.0     NaN   0.000000
+4    almond   400         NaN   400.0   1.000000
+5     anise   400         NaN   400.0   1.000000
+6   pungent   256       256.0     NaN   0.000000
+7  creosote   192       192.0     NaN   0.000000
+8     musty    36        36.0     NaN   0.000000"
+Gill Attachment,"      index  Gill Attachment  Not Edible  Edible  Edibility
+0      free             7914        3898    4016   0.507455
+1  attached              210          18     192   0.914286"
+Gill Spacing,"     index  Gill Spacing  Not Edible  Edible  Edibility
+0    close          6812        3804    3008   0.441574
+1  crowded          1312         112    1200   0.914634"
+Gill Size,"    index  Gill Size  Not Edible  Edible  Edibility
+0   broad       5612        1692    3920   0.698503
+1  narrow       2512        2224     288   0.114650"
+Gill Color,"        index  Gill Color  Not Edible  Edible  Edibility
+0        buff        1728      1728.0     NaN   0.000000
+1        pink        1492       640.0   852.0   0.571046
+2       white        1202       246.0   956.0   0.795341
+3       brown        1048       112.0   936.0   0.893130
+4        gray         752       504.0   248.0   0.329787
+5   chocolate         732       528.0   204.0   0.278689
+6      purple         492        48.0   444.0   0.902439
+7       black         408        64.0   344.0   0.843137
+8         red          96         NaN    96.0   1.000000
+9      yellow          86        22.0    64.0   0.744186
+10     orange          64         NaN    64.0   1.000000
+11      green          24        24.0     NaN   0.000000"
+Stalk Shape,"       index  Stalk Shape  Not Edible  Edible  Edibility
+0   tapering         4608        2016    2592   0.562500
+1  enlarging         3516        1900    1616   0.459613"
+Stalk Root,"     index  Stalk Root  Not Edible  Edible  Edibility
+0  bulbous        3776      1856.0    1920   0.508475
+1    equal        1120       256.0     864   0.771429
+2     club         556        44.0     512   0.920863
+3   rooted         192         NaN     192   1.000000"
+Stalk Surface Above Ring,"     index  Stalk Surface Above Ring  Not Edible  Edible  Edibility
+0   smooth                      5176        1536    3640   0.703246
+1    silky                      2372        2228     144   0.060708
+2  fibrous                       552         144     408   0.739130
+3    scaly                        24           8      16   0.666667"
+Stalk Surface Below Ring,"     index  Stalk Surface Below Ring  Not Edible  Edible  Edibility
+0   smooth                      4936        1536    3400   0.688817
+1    silky                      2304        2160     144   0.062500
+2  fibrous                       600         144     456   0.760000
+3    scaly                       284          76     208   0.732394"
+Stalk Color Above Ring,"      index  Stalk Color Above Ring  Not Edible  Edible  Edibility
+0     white                    4464      1712.0  2752.0   0.616487
+1      pink                    1872      1296.0   576.0   0.307692
+2      gray                     576         NaN   576.0   1.000000
+3     brown                     448       432.0    16.0   0.035714
+4      buff                     432       432.0     NaN   0.000000
+5    orange                     192         NaN   192.0   1.000000
+6       red                      96         NaN    96.0   1.000000
+7  cinnamon                      36        36.0     NaN   0.000000
+8    yellow                       8         8.0     NaN   0.000000"
+Stalk Color Below Ring,"      index  Stalk Color Below Ring  Not Edible  Edible  Edibility
+0     white                    4384      1680.0  2704.0   0.616788
+1      pink                    1872      1296.0   576.0   0.307692
+2      gray                     576         NaN   576.0   1.000000
+3     brown                     512       448.0    64.0   0.125000
+4      buff                     432       432.0     NaN   0.000000
+5    orange                     192         NaN   192.0   1.000000
+6       red                      96         NaN    96.0   1.000000
+7  cinnamon                      36        36.0     NaN   0.000000
+8    yellow                      24        24.0     NaN   0.000000"
+Veil Type,"     index  Veil Type  Not Edible  Edible  Edibility
+0  partial       8124        3916    4208   0.517971"
+Veil Color,"    index  Veil Color  Not Edible  Edible  Edibility
+0   white        7924      3908.0  4016.0   0.506815
+1   brown          96         NaN    96.0   1.000000
+2  orange          96         NaN    96.0   1.000000
+3  yellow           8         8.0     NaN   0.000000"
+Ring Number,"   index  Ring Number  Not Edible  Edible  Edibility
+0      1         7488        3808  3680.0   0.491453
+1      2          600          72   528.0   0.880000
+2      0           36          36     NaN   0.000000"
+Ring Type,"        index  Ring Type  Not Edible  Edible  Edibility
+0     pendant       3968       816.0  3152.0   0.794355
+1  evanescent       2776      1768.0  1008.0   0.363112
+2       large       1296      1296.0     NaN   0.000000
+3     flaring         48         NaN    48.0   1.000000
+4        none         36        36.0     NaN   0.000000"
+Spore Print Color,"       index  Spore Print Color  Not Edible  Edible  Edibility
+0      white               2388      1812.0   576.0   0.241206
+1      brown               1968       224.0  1744.0   0.886179
+2      black               1872       224.0  1648.0   0.880342
+3  chocolate               1632      1584.0    48.0   0.029412
+4      green                 72        72.0     NaN   0.000000
+5     orange                 48         NaN    48.0   1.000000
+6     yellow                 48         NaN    48.0   1.000000
+7       buff                 48         NaN    48.0   1.000000
+8    purlple                 48         NaN    48.0   1.000000"
+Population,"       index  Population  Not Edible  Edible  Edibility
+0    several        4040      2848.0    1192   0.295050
+1   solitary        1712       648.0    1064   0.621495
+2  scattered        1248       368.0     880   0.705128
+3   numerous         400         NaN     400   1.000000
+4   abundant         384         NaN     384   1.000000
+5  clustered         340        52.0     288   0.847059"
+Habitat,"     index  Habitat  Not Edible  Edible  Edibility
+0    woods     3148      1268.0    1880   0.597205
+1  grasses     2148       740.0    1408   0.655493
+2    paths     1144      1008.0     136   0.118881
+3   leaves      832       592.0     240   0.288462
+4    urban      368       272.0      96   0.260870
+5  meadows      292        36.0     256   0.876712
+6    waste      192         NaN     192   1.000000"
