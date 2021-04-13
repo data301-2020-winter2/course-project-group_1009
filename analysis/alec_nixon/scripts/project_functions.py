@@ -58,3 +58,16 @@ def plotEdibility(df):
         sns.countplot(data=df, x=df.columns[i], hue="Edible", hue_order=[True,False], ax=axes[i])
     #return df
 
+def sort_by_influence(ratioDict, keepCoeff=False):
+    ratios = pd.DataFrame(columns=['Feature','Edibility'])
+    for ratio in ratioDict.values():
+        for index, row in ratio.iterrows():
+            #nr={'Feature':'{} {}'.format(row['index'],ratio.columns[1]),'Edibility':row['Edibility']}
+            nr={'Feature':'{} {}'.format(regex.sub(r'([a-z])([a-z]*)',lambda match: '{}{}'.format(match.group(1).upper(),match.group(2)),str(row['index'])),ratio.columns[1]),'Edibility':row['Edibility']}
+            #print(nr)
+            ratios = ratios.append(nr, ignore_index=True)
+    ratios['coeff'] = abs(ratios['Edibility']-0.5)+0.5
+    ratios.sort_values(by=['coeff'],ascending=False).reset_index(drop=True,inplace=True)
+    if not keepCoeff:
+        ratios.drop(['coeff'],axis=1,inplace=True)
+    return ratios
