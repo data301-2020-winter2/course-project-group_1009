@@ -3,7 +3,7 @@
 
 - Your title can change over time.
 
-# Milestone 4 - Video Presentation
+## Milestone 4 - Video Presentation
 https://youtu.be/kmG0I-q6P64
 
 ## Milestones
